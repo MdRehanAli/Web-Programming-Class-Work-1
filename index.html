@@ -11,38 +11,76 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="m-5">
+
+    <!-- Navbar Start  -->
+    <nav class="nav mb-5 d-flex justify-content-between">
+        <ul class="nav nav-pills w-30 text-white ">
+            <li class="nav-item">
+                <a class="nav-link" href="#">First</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Second</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Third</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Fourth</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Fifth</a>
+            </li>
+        </ul>
+
+        <h1 class="w-25">ACME</h1>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item ">
+                <a class="nav-link active" aria-current="page" href="#">Action</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!-- Carousel start  -->
     <div id="carouselExampleDark" class="carousel carousel-dark slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
+
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
-                <img src="images/header.png" class="d-block w-100" alt="Header Image">
+                <div class="w-100">
+                    <img src="images/header.png" class="d-block w-100" alt="Header Image">
+                </div>
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Long Headline to turn your visitors into users</h5>
+                    <p>Separated they live in Bookmarksgrove right at the coast of the famous Semantics, large language
+                        ocean and many more stuff and more more more</p>
+                    <button class="btn btn-primary">Action</button>
                 </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
-                <img src="images/Family.png" class="d-block w-100" alt="Family Image">
+                <div class="w-100">
+                    <img src="images/Family.png" class="d-block w-100" alt="Family Image">
+                </div>
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <h5>Long Headline to turn your visitors into users</h5>
+                    <p>Separated they live in Bookmarksgrove right at the coast of the famous Semantics, large language
+                        ocean and many more stuff and more more more</p>
+                    <button class="btn btn-primary">Action</button>
                 </div>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="images/Double.png" class="d-block w-100" alt="Double Image">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>Some representative placeholder content for the third slide.</p>
+            <div class="w-100">
+                <img src="images/Double.png" class="d-block w-100" alt="Double Image">
             </div>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Long Headline to turn your visitors into users</h5>
+                <p>Separated they live in Bookmarksgrove right at the coast of the famous Semantics, large language
+                    ocean and many more stuff and more more more</p>
+                <button class="btn btn-primary">Action</button>
+            </div>
+
         </div>
         <!-- <div class="carousel-item">
           <img src="images/Single.png" class="d-block w-100" alt="Single Image">
@@ -51,14 +89,32 @@
             <p>Some representative placeholder content for the third slide.</p>
           </div>
         </div> -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+
+        <div class="">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                    
+            </div>
+            <div>
+                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
